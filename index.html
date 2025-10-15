@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="uz-Latin" class="light">
+<head>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="AnsorMed" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- Styles & Fonts  -->
+
+    <link rel="stylesheet" href="./assets/css/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnsorMed</title>
+</head>
+<body id="body">
+    
+    <!-- Loader  -->
+
+    <div class="loader" id="loader">
+        <span class="loader_circle">
+            <span class="circle_plus"></span>
+        </span>
+    </div>
+
+    <!-- More menu -->
+
+    <div class="more_menu" id="moreMenu">
+        <label for="themeSwichter" class="theme_swichter">
+            <input type="checkbox" name="theme-swichter" id="themeSwichter" onclick="themeButton(this)">
+            <i class="fa fa-moon"></i>
+            <i class="fa fa-sun"></i>
+        </label>
+        <label for="moreButton">
+            <span class="fas fa-gears"></span>
+            <input type="checkbox" id="moreButton" onclick="moreMenuFn(this)">
+        </label>
+
+        <a href="#body" class="top_button">
+            <span class="fas fa-angle-up"></span>
+        </a>
+    </div>
+
+    <!-- Header -->
+
+    <header class="main_header">
+        <div class="container container_header">
+            <a href="#" class="logo_header">
+                <img src="./res/imgs/logo-icon@2x.jpg" height="50px" width="50px" alt="AnsorMed Light Logo">
+                <p class="logo_text">AnsorMed</p>
+            </a>
+
+            <div class="nav_container" id="navBar">
+                <button class="nav_closer" onclick="navCloser()">
+                    <span class="fa fa-close"></span>
+                </button>
+        
+
+                <nav class="nav_list">
+                    <a href="#" class="nav_links">xizmatlar</a>
+                    <a href="#" class="nav_links">dorilar</a>
+                    <a href="#" class="nav_links">asal</a>
+                    <a href="#" class="nav_links">kontaktlar</a>
+                    <a href="#" class="nav_links">blog</a>
+                </nav>
+            </div>
+
+            <a href="#" class="registration_link">
+                qabulga yozilish
+            </a>
+
+            <button class="nav_toggler"  onclick="navToggler()">
+                <span class="fa fa-bars"></span>
+            </button>
+        </div>
+    </header>   
+
+    <main class="main">
+        
+    <!-- Hero -->
+
+    <section class="hero">
+        <div class="container container_hero">
+            <div class="hero_content">
+                <h1 class="hero_title">
+                    Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.
+                </h1>
+                <p class="hero_text">
+                    Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p uchraydigan kasalliklarni yengishda yordam beradi. Sog’ligingizni o’z ishining professionallariga ishonib topshiring.
+                </p>
+            <a href="#" class="registration_link">
+                qabulga yozilish
+            </a>
+            </div>
+            <img class="hero_img" src="./res/imgs/hero-img@2x.png" width="425px" height="505px" alt="Ulug`bek Azamatov">
+        </div>
+    </section>
+
+    <!-- Services -->
+
+    <section class="services">
+        <div class="container container_services">
+            <h2 class="services_title">
+                Xizmatlar
+            </h2>
+            <ul class="services_list">
+                <li class="list_items">
+                    <img src="./res/imgs/hijama@2x.jpg" alt="Hijoma">
+
+                    <div class="items_container">
+                        <h3 class="items_title">Hijoma</h3>
+                        <p class="items_text">Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat qilgan hadisda rasululloh sallallohu alayhi va sallam dedilar: «Sizlar hijoma qiladigan kunlaringizning eng yaxshisi 17, 19 va 21-kunlardir» (bu kunlar hijrij-kamariy hisobdagi oylar kunlaridir).</p>
+                    </div>
+
+                </li>
+
+                <li class="list_items">
+                    <img src="./res/imgs/manual-therapy@2x.jpg" alt="Manual terapiya">
+
+                    <div class="items_container">
+                        <h3 class="items_title">Manual terapiya</h3>
+                        <p class="items_text">Manual terapiya Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
+                    </div>
+
+                </li>
+
+                <li class="list_items">
+                    <img src="./res/imgs/therapy-byzuluk@2x.jpg" alt="Zuluk bilan davolash">
+
+                    <div class="items_container">
+                        <h3 class="items_title">Zuluk bilan davolash</h3>
+                        <p class="items_text">Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία — «davolash») — ma’lum kasalliklarni dorivor zuluklar (Hirudo medicinalis) yordamida davolash usuli. Fizioterapevtik muolaja, muqobil tibbiyotga oid sanaladi. Bunday zuluklar ushbu kichik sinf chuvchalchanglariga oid yagona tur hisoblanadi, qolganlari shifobaxsh ta’sir ko’rsatmaydi.</p>
+                    </div>
+
+                </li>
+
+                <li class="list_items">
+                    <img src="./res/imgs/natural@2x.jpg" alt="Tabiiy dori vositalari">
+
+                    <div class="items_container">
+                        <h3 class="items_title">Tabiiy dori vositalari</h3>
+                        <p class="items_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
+                    </div>
+
+                </li>
+            </ul>
+
+            <a href="#" class="registration_link">
+                qabulga yozilish
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta">
+        <div class="container container_cta">
+            <h2 class="cta_title">
+                Qabulga ro’yxatdan o’ting
+            </h2>
+
+            <ul class="cta_list">
+                <li class="list_items">
+                    <a href="#" class="cta_links">
+                        Qo'ngiroq qilish 
+                    </a>
+                </li>
+                <li class="list_items">
+                    <a href="#" class="cta_links">
+                        Telegramdan yozish
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container container_footer">
+        <a href="#" class="logo_footer">
+            <img src="./res/imgs/logo-icon@2x.jpg" height="50px" width="50px" alt="AnsorMed Light Logo">    
+            <p class="logo_text">AnsorMed</p>
+        </a>
+
+        <div class="nav_container">
+        <nav class="nav_list">
+            <a href="#" class="nav_links">xizmatlar</a>
+            <a href="#" class="nav_links">dorilar</a>
+            <a href="#" class="nav_links">asal</a>
+            <a href="#" class="nav_links">kontaktlar</a>
+            <a href="#" class="nav_links">blog</a>
+        </nav>
+        </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
